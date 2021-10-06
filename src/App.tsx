@@ -1,10 +1,14 @@
 import React from "react"
 import "./App.css"
+import car from "./images/our_car.jpg"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className='container'>
-      <p className='moi'>Moi!</p>
+      <p className='moi'>We have a new car!</p>
+      <img src={car} alt='Our car' className='carPic' />
+      <Footer />
     </div>
   )
 }

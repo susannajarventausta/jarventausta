@@ -2,19 +2,24 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e79118;
+  animation: 3s infinite linear colorChange;
 }
 
 .moi {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 50px;
   color: #186ee7;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+}
+
+.carPic {
+  max-width: 100%;
+  max-height: 100%;
+  width: 250px;
+  border: 10px dotted #186ee7;
+  margin-bottom: 40px;
 }
 
 @keyframes spin {
@@ -23,5 +28,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes colorChange {
+  from {
+    background-color: #00d0ff;
+  }
+  50% {
+    background-color: #ff4a00;
+  }
+  to {
+    background-color: #00d0ff;
   }
 }
