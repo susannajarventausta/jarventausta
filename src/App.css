@@ -14,27 +14,12 @@
   animation: 1s infinite linear zoomText;
 }
 
-.moi {
-  font-family: "Comic Sans MS", "Comic Sans";
-  color: #186ee7;
-  animation: 1s infinite linear zoomText;
-}
-
 .carPic {
   max-width: 400px;
   max-height: 100%;
   border: 10px dotted #186ee7;
   margin-bottom: 40px;
   animation: 4s infinite linear spin, 1s infinite linear zoom;
-}
-
-.musicCredit {
-  z-index: 2;
-  position: fixed;
-  bottom: 50px;
-  right: 0;
-  margin-block: 0;
-  padding: 10px;
 }
 
 @keyframes spin {
